@@ -1,12 +1,20 @@
-package com.kodnest.w3resource;
+package com.kodnest.loopingpractice;
 
 public class Q9 {
-/*Write a Java program to compute the specified expressions and print the output.
-Test Data:
-((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))
-Expected Output
-2.138888888888889*/
-	public static void main(String[] args) {
-		System.out.println((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+public static void main(String[] args) {
+	for(int i=1; i<=5; i++)
+	{
+		for(int j=1; j<=5; j++)
+		{
+			if(j%2==0&&i%2==0||j==3&&i==5||j==3&&i==1||i==3&&j==1||i==3&&j==5)
+			{
+				System.out.print("*");
+			}
+			else {
+				System.out.print(" ");
+			}
+		}
+		System.out.println();
 	}
+}
 }
