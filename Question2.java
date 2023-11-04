@@ -1,15 +1,20 @@
-package com.kodnest.practicetest;
-
-import java.util.Scanner;
+package com.kodnest.methods1;
 
 public class Question2 {
-	public static void main(String[] args) {
-	Scanner scan=new Scanner(System.in);
-	System.out.println("User please enter a character");
-	int a=scan.nextInt();
-	if(a>=-99999&&a<=99999) {
-		System.out.println("Integer");
+	int subtractionNumbers(int num1, int num2) {
+		int result=num2-num1;
+		return result;
 	}
-	System.out.println("end");
+	int multiplyNumbers(int num1, int num2) {
+		int result=num1*num2;
+		return result;
+	}
+	double divideNumbers(int num1, int num2) {
+		double result=num1/num2;
+		return result;
+	}
+	int findRemainder(int num1,int num2) {
+		int result=num1%num2;
+		return result;
 	}
 }
