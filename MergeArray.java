@@ -40,7 +40,7 @@ public static void main(String[] args) {
 	//Display the Elements
 	System.out.println("The Merged elemnets are : ");
 	for(int i=0; i<c.length; i++) {
-		System.out.println(c[i]);
+		System.out.print(c[i]+" ");
 	}
 }
 }
