@@ -7,19 +7,17 @@ public static void main(String[] args) {
 	System.out.println("User please enter the number");
 	int n = scan.nextInt();
 	System.out.println("The multiplication table of "+n);
-	int result = tables(n);
+	int i=1;
+	tables(n,i);
 	scan.close();
 }
-public static int tables(int n) {
-	if(n==0) {
+public static int tables(int n, int i) {
+	if(i==11) {
 		return 1;
 	}
 	else {
-		for(int i=1; i<=10; i++) {
-			System.out.println(n+" x "+i+" = "+(i*n));
-		}
-		n=0;
-		return tables(n);
+		System.out.println(n+" x "+i+" = "+(i*n));		
+		return tables (n,i+1);
 	}
 }
 }
