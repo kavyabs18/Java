@@ -1,11 +1,10 @@
-package com.kodnest.Questions;
+package com.kodnest.access_modifier_2;
+import com.kodnest.access_modifier_1.*;
 
-public class Solution3 {
-public static void main(String[] args) {
-//	1. wajp to display the first half of the string	
-	String s = "programming";
-	for(int i=0; i<s.length()/2+1; i++) {
-		System.out.print(s.charAt(i)+" ");
+public class Solution3 extends Solution1 {
+	private int c=30;
+	public void display() {
+		System.out.println(c);
+		System.out.println(new Solution3().a);
 	}
-}
 }
