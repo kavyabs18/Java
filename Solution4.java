@@ -1,11 +1,9 @@
-package com.kodnest.Questions;
+package com.kodnest.access_modifier_2;
 
 public class Solution4 {
-public static void main(String[] args) {
-//	1. wajp to display the last half of the string	
-	String s = "programming";
-	for(int i=s.length()/2+1; i<s.length(); i++) {
-		System.out.print(s.charAt(i)+" ");
+	public void display() {
+		int d=40;
+		System.out.println(d);
+		System.out.println(new Solution3().a);
 	}
-}
 }

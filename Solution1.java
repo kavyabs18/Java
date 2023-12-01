@@ -1,11 +1,14 @@
-package com.kodnest.Questions;
+package com.kodnest.access_modifier_1;
 
 public class Solution1 {
-public static void main(String[] args) {
-//	1. wajp to display all the characters seperated by space	
-	String s = "programming";
-	for(int i=0; i<s.length(); i++) {
-		System.out.print(s.charAt(i)+" ");
+	public int a=10;
+	protected void display() {
+		System.out.println(a);
 	}
 }
-}
+
+
+//private is a class level AM
+//default is package level AM
+//protected is package level Access, and can access to subclasses present in different package
+//public is project level AM
