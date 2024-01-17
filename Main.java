@@ -1,47 +1,38 @@
-package com.kodnest.thread;
+package com.kodnest.Collections_Framework;
+
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Stack;
+import java.util.Vector;
 
 public class Main {
 	public static void main(String[] args) {
-		printAlpha a = new printAlpha();
-		printNum n = new printNum();
+		Stack s = new Stack();
+		s.add(10);
+		s.add(20);
+		System.out.println(s);
+
+		Vector v = new Vector();
+		v.add(10);
+		v.add(20);
+		System.out.println(v);
+
+		Hashtable ht = new Hashtable();
+		ht.put(1, 10);
+		ht.put(5, 50);
+		System.out.println(ht);
+
+		Properties p = new Properties();
+		p.put(5, 50);
+		p.put(3, 30);
+		System.out.println(p);
 		
-		a.start();
-		a.setName("first-thread");
-		n.start();
-		n.setName("second-thread");
-	}
-}
-
-class printAlpha extends Thread{
-	public void run() {
-		Thread currentThread = Thread.currentThread();
-		System.out.println(currentThread);
-		for(int i='a'; i<'l'; i++) {
-			System.out.print((char)i+" ");
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		System.out.println();
-	}
-}
-
-class printNum extends Thread{
-	public void run() {
-		Thread currentThread = Thread.currentThread();
-		System.out.println(currentThread);
-		for(int i=0; i<11; i++) {
-			System.out.print(i+" ");
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		System.out.println();	
+//		Enumeration e = new Enumeration();		error
+//		Dictionary d = new Dictionary();		error 
+//because it is abstract class so by extending we can create an OBJECT of it.
+		
 	}
 }
