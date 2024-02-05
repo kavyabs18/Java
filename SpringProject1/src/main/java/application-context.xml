@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<bean id="S1" class="com.kodnest.bean.Student">
+		<!-- <constructor-arg name="Id" value="10"></constructor-arg>
+		<constructor-arg name="Name" value="John"></constructor-arg> -->
+		<property name="Id" value="10"></property> <property name="Name" value="John"></property>
+	</bean>
+	<bean id="U1" class="com.kodnest.bean.University">
+		<!--<constructor-arg name="Uid" value="1"></constructor-arg>
+		<constructor-arg name="Uname" value="VTU"></constructor-arg> -->
+		<property name="Uid" value="1"></property> <property name="Uname" value="VTU"></property>
+	</bean>
+</beans>
