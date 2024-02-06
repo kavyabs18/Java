@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Constructor Injection -->
+	<bean id="L1" class="com.kodnest.bean.Laptop">
+		<constructor-arg name="Name" value="Dell"></constructor-arg>
+		<constructor-arg name="Color" value="Black"></constructor-arg>
+	</bean>
+	<!-- Setter Injection -->
+	<bean id="L2" class="com.kodnest.bean.Laptop">
+		<property name="Name" value="HP"></property>
+		<property name="Color" value="Black"></property>
+	</bean>
+
+	<!-- CannotLoadBeanClassException class value is empty or incorrect -->
+	<!-- NoSuchBeanDefinitionException id value is empty or incorrect or not 
+		mentioned -->
+	<!--BeanCreationException class not mentioned -->
+
+</beans>
