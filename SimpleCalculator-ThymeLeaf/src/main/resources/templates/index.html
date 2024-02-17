@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf-Spring-Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<header><b>Simple Calculator</b></header>
+		<form action="/data" method="get">
+			<div class="cal">
+				<label>Enter Number-1</label> <input type="text" name="data1"><br>
+				<label>Enter Number-2</label> <input type="text" name="data2"><br>
+			</div>
+			<footer>
+				<pre><button type="submit" formaction="/sum">Sum</button>  <button
+						type="submit" formaction="/diff">Difference</button>  <button
+						type="submit" formaction="/prod">Product</button>  <button
+						type="submit" formaction="/quo">Quotient</button>  <button
+						type="submit" formaction="/rem">Remainder</button></pre>
+			</footer>
+		</form>
+	</div>
+</body>
+</html>

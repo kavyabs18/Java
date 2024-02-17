@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+.cal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #56a0f3;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	padding: 10px;
+}
+
+.page {
+	margin: auto;
+	max-width: 500px;
+}
+
+header {
+	text-align: center;
+	font-size: larger;
+	background-color: pink;
+	color: purple;
+	padding: 20px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: gray;
+	padding: 15px;
+}
